@@ -1,0 +1,13 @@
+allprojects {
+    group = 'com.qd'
+    version = '0.1'
+}
+
+
+subprojects {
+    apply plugin: 'java'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.12'
+}

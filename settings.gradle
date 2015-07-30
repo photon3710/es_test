@@ -1,0 +1,3 @@
+include 'indexing', 'commons'
+
+rootProject.name = 'es_test'
