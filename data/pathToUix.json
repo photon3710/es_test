@@ -1,0 +1,270 @@
+[
+  {
+    "intent": "-a android.intent.action.MAIN -n com.android.settings/.SubSettings --ei ':android:show_fragment_short_title' '0' --ei ':android:show_fragment_title' '2131427812' --ez ':android:no_headers' 'true' --es ':android:show_fragment' 'com.android.settings.wifi.WifiSettings' --ei 'settings:ui_options' '1'",
+    "uixFileName": "dump_3456502516053785900.uix",
+    "path": [
+      "(1) LinearLayout clickable  [48,317][1032,461]Inner Text: (Wi‑Fi,)"
+    ],
+    "content": [
+      "Wi‑Fi",
+      "To see available networks, turn Wi‑Fi on.",
+      "WPS Push Button",
+      "Add network"
+    ]
+  },
+  {
+    "intent": "",
+    "uixFileName": "dump_3757089796176595104.uix",
+    "path": [
+      "(1) LinearLayout clickable  [48,317][1032,461]Inner Text: (Wi‑Fi,)",
+      "(1) Switch:OFF clickable  [722,105][1080,189]"
+    ],
+    "content": [
+      "Wi‑Fi",
+      "WiredSSID",
+      "Connected",
+      "WPS Push Button",
+      "Add network"
+    ]
+  },
+  {
+    "intent": "",
+    "uixFileName": "dump_9062733931631844867.uix",
+    "path": [
+      "(1) LinearLayout clickable  [48,317][1032,461]Inner Text: (Wi‑Fi,)",
+      "(1) Switch:OFF clickable  [722,105][1080,189]",
+      "(0) TextView {WPS Push Button} clickable  [0,1632][180,1776]"
+    ],
+    "content": [
+      "Wi‑Fi",
+      "WiredSSID",
+      "WPS Push Button",
+      "Add network"
+    ]
+  },
+  {
+    "intent": "-a android.intent.action.MAIN -n com.android.settings/.SubSettings --ei ':android:show_fragment_short_title' '0' --ei ':android:show_fragment_title' '2131429075' --ez ':android:no_headers' 'true' --es ':android:show_fragment' 'com.android.settings.DataUsageSummary'",
+    "uixFileName": "dump_1533964645390828236.uix",
+    "path": [
+      "(2) LinearLayout clickable  [48,463][1032,607]Inner Text: (Data usage,)"
+    ],
+    "content": [
+      "Data usage",
+      "Mobile data",
+      "Set mobile data limit",
+      "Data usage cycle",
+      "Jun 21 – Jul 20",
+      "-0.0 MB\nlimit",
+      "2.0 GB\nwarning",
+      "Jul 5–12: about 9.10GB used, as measured by your phone. Your carrier's data usage accounting may differ.",
+      "Android OS",
+      "8.72GB"
+    ]
+  },
+  {
+    "intent": "",
+    "uixFileName": "dump_1998631351823565966.uix",
+    "path": [
+      "(2) LinearLayout clickable  [48,463][1032,607]Inner Text: (Data usage,)",
+      "(2) ListView clickable  [0,219][1080,1776]Inner Text: (Mobile data,Set mobile data limit,Data usage cycle,Jun 21 – Jul 20,-0.0 MB\nlimit,2.0 GB\nwarning,Jul 5–12: about 9.10GB used, as measured by your phone. Your carrier's data usage accounting may differ.,Android OS,8.72GB,)"
+    ],
+    "content": [
+      "Data usage",
+      "Mobile data",
+      "Set mobile data limit",
+      "Data usage cycle",
+      "Jun 21 – Jul 20",
+      "-0.0 MB\nlimit",
+      "2.0 GB\nwarning",
+      "Jul 5–12: about 9.12GB used, as measured by your phone. Your carrier's data usage accounting may differ.",
+      "Android OS",
+      "8.74GB"
+    ]
+  },
+  {
+    "intent": "",
+    "uixFileName": "dump_7437443400550473915.uix",
+    "path": [
+      "(2) LinearLayout clickable  [48,463][1032,607]Inner Text: (Data usage,)",
+      "(2) ListView clickable  [0,219][1080,1776]Inner Text: (Mobile data,Set mobile data limit,Data usage cycle,Jun 21 – Jul 20,-0.0 MB\nlimit,2.0 GB\nwarning,Jul 5–12: about 9.10GB used, as measured by your phone. Your carrier's data usage accounting may differ.,Android OS,8.72GB,)",
+      "(2) FrameLayout clickable  [48,1499][1032,1691]Inner Text: (Android OS,8.74GB,)"
+    ],
+    "content": [
+      "Data usage",
+      "Data usage cycle",
+      "Jun 21 – Jul 20",
+      "Jul 5–12: about 8.75GB used, as measured by your phone. Your carrier's data usage accounting may differ.",
+      "Android OS",
+      "Foreground",
+      "0.00B",
+      "Background",
+      "8.75GB"
+    ]
+  },
+  {
+    "intent": "",
+    "uixFileName": "dump_900069174910882333.uix",
+    "path": [
+      "(2) LinearLayout clickable  [48,463][1032,607]Inner Text: (Data usage,)",
+      "(1) LinearLayout clickable  [48,221][1032,1497]Inner Text: (Mobile data,Set mobile data limit,Data usage cycle,Jun 21 – Jul 20,-0.0 MB\nlimit,2.0 GB\nwarning,Jul 5–12: about 9.10GB used, as measured by your phone. Your carrier's data usage accounting may differ.,)"
+    ],
+    "content": [
+      "Data usage",
+      "Mobile data",
+      "Set mobile data limit",
+      "Data usage cycle",
+      "Jun 21 – Jul 20",
+      "-0.0 MB\nlimit",
+      "2.0 GB\nwarning",
+      "Jul 5–12: about 9.13GB used, as measured by your phone. Your carrier's data usage accounting may differ.",
+      "Android OS",
+      "8.75GB"
+    ]
+  },
+  {
+    "intent": "-a android.intent.action.MAIN -n com.android.settings/.SubSettings --ei ':android:show_fragment_short_title' '0' --ei ':android:show_fragment_title' '2131427573' --ez ':android:no_headers' 'true' --es ':android:show_fragment' 'com.android.settings.WirelessSettings'",
+    "uixFileName": "dump_2069713400980933402.uix",
+    "path": [
+      "(3) LinearLayout clickable  [48,609][1032,753]Inner Text: (More…,)"
+    ],
+    "content": [
+      "Wireless & networks",
+      "Airplane mode",
+      "Default SMS app",
+      "Messaging",
+      "VPN",
+      "Mobile networks",
+      "Mobile plan"
+    ]
+  },
+  {
+    "intent": "-a android.intent.action.MAIN -n com.android.settings/.SubSettings --ei ':android:show_fragment_short_title' '0' --ei ':android:show_fragment_title' '2131427996' --ez ':android:no_headers' 'true' --es ':android:show_fragment' 'com.android.settings.SoundSettings'",
+    "uixFileName": "dump_8795430152308089664.uix",
+    "path": [
+      "(5) LinearLayout clickable  [48,853][1032,997]Inner Text: (Sound,)"
+    ],
+    "content": [
+      "Sound",
+      "Volumes",
+      "Call ringtone & vibrate",
+      "Phone ringtone",
+      "Flutey Phone",
+      "System",
+      "Default notification sound",
+      "Pixie Dust",
+      "Dial pad touch tones",
+      "Touch sounds",
+      "Screen lock sound"
+    ]
+  },
+  {
+    "intent": "-a android.intent.action.RINGTONE_PICKER -n com.android.providers.media/.RingtonePickerActivity -f 8388608 --ez 'android.intent.extra.ringtone.SHOW_SILENT' 'true' --ei 'android.intent.extra.ringtone.TYPE' '1' --es 'android.intent.extra.ringtone.TITLE' 'Phone ringtone' --ez 'android.intent.extra.ringtone.SHOW_DEFAULT' 'false'",
+    "uixFileName": "dump_3460646691497657761.uix",
+    "path": [
+      "(5) LinearLayout clickable  [48,853][1032,997]Inner Text: (Sound,)",
+      "(2) LinearLayout clickable  [48,511][1032,703]Inner Text: (Phone ringtone,Flutey Phone,)"
+    ],
+    "content": [
+      "Phone ringtone",
+      "Flutey Phone",
+      "Free Flight",
+      "Friendly Ghost",
+      "Funk Y'all",
+      "Game Over Guitar",
+      "Gimme Mo' Town",
+      "Girtab",
+      "Glacial Groove",
+      "Growl"
+    ]
+  },
+  {
+    "intent": "-a android.intent.action.MAIN -n com.android.settings/.SubSettings --ei ':android:show_fragment_short_title' '0' --ei ':android:show_fragment_title' '2131428042' --ez ':android:no_headers' 'true' --es ':android:show_fragment' 'com.android.settings.DisplaySettings'",
+    "uixFileName": "dump_8697632909061398243.uix",
+    "path": [
+      "(6) LinearLayout clickable  [48,999][1032,1143]Inner Text: (Display,)"
+    ],
+    "content": [
+      "Display",
+      "Brightness",
+      "Wallpaper",
+      "Auto-rotate screen",
+      "Sleep",
+      "After 1 minute of inactivity",
+      "Daydream",
+      "Clock",
+      "Font size",
+      "Normal",
+      "Cast screen"
+    ]
+  },
+  {
+    "intent": "-a android.intent.action.MAIN -n com.android.settings/.SubSettings --ei ':android:show_fragment_short_title' '0' --ei ':android:show_fragment_title' '2131428052' --ez ':android:no_headers' 'true' --es ':android:show_fragment' 'com.android.settings.DreamSettings' --ei 'settings:ui_options' '1'",
+    "uixFileName": "dump_6444128373719487753.uix",
+    "path": [
+      "(6) LinearLayout clickable  [48,999][1032,1143]Inner Text: (Display,)",
+      "(0) ListView clickable  [0,219][1080,1776]Inner Text: (Brightness,Wallpaper,Auto-rotate screen,Sleep,After 1 minute of inactivity,Daydream,Clock,Font size,Normal,Cast screen,)"
+    ],
+    "content": [
+      "Daydream",
+      "Clock",
+      "Settings",
+      "Colors",
+      "Photo Frame",
+      "Settings",
+      "Photo Table",
+      "Settings",
+      "Start now",
+      "When to daydream"
+    ]
+  },
+  {
+    "intent": "-n com.android.deskclock/.ScreensaverSettingsActivity -f 8388608",
+    "uixFileName": "dump_5425813206548657990.uix",
+    "path": [
+      "(6) LinearLayout clickable  [48,999][1032,1143]Inner Text: (Display,)",
+      "(0) ListView clickable  [0,219][1080,1776]Inner Text: (Brightness,Wallpaper,Auto-rotate screen,Sleep,After 1 minute of inactivity,Daydream,Clock,Font size,Normal,Cast screen,)",
+      "(2) ImageView {Settings} clickable  [888,249][1032,393]"
+    ],
+    "content": [
+      "Clock",
+      "Style",
+      "Digital",
+      "Night mode",
+      "Very dim display (for dark rooms)"
+    ]
+  },
+  {
+    "intent": "",
+    "uixFileName": "dump_3772274216261840234.uix",
+    "path": [
+      "(6) LinearLayout clickable  [48,999][1032,1143]Inner Text: (Display,)",
+      "(0) ListView clickable  [0,219][1080,1776]Inner Text: (Brightness,Wallpaper,Auto-rotate screen,Sleep,After 1 minute of inactivity,Daydream,Clock,Font size,Normal,Cast screen,)",
+      "(0) TextView:Start now {Start now} clickable  [0,1632][540,1776]"
+    ],
+    "content": [
+      "No photos selected."
+    ]
+  },
+  {
+    "intent": "",
+    "uixFileName": "dump_7321267626484148692.uix",
+    "path": [
+      "(6) LinearLayout clickable  [48,999][1032,1143]Inner Text: (Display,)",
+      "(2) LinearLayout clickable  [48,607][1032,799]Inner Text: (Auto-rotate screen,)"
+    ],
+    "content": [
+      "No photos selected."
+    ]
+  },
+  {
+    "intent": "",
+    "uixFileName": "dump_1874735306677079555.uix",
+    "path": [
+      "(6) LinearLayout clickable  [48,999][1032,1143]Inner Text: (Display,)",
+      "(3) LinearLayout clickable  [48,801][1032,993]Inner Text: (Sleep,After 1 minute of inactivity,)"
+    ],
+    "content": [
+      "No photos selected."
+    ]
+  }
+]

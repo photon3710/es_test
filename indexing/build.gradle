@@ -1,0 +1,96 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'eclipse-wtp'
+apply plugin: 'idea'
+
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories { mavenCentral() }
+
+apply plugin: 'avro-gradle-plugin'
+
+buildscript {
+	repositories {
+		mavenCentral()
+        jcenter()
+		maven {
+			url 'http://repo.springsource.org/plugins-release'
+		}
+    }
+    
+    dependencies {
+        classpath 'org.apache.maven:maven-artifact:2.2.1'
+        classpath 'org.apache.avro:avro-compiler:1.7.6'
+        classpath 'org.apache.avro:avro-gradle-plugin:1.7.2'
+        classpath 'com.github.jengelman.gradle.plugins:shadow:0.8'
+        classpath 'eu.appsatori:gradle-fatjar-plugin:0.2-rc1'
+    }
+}
+
+//apply plugin: 'shadow'
+// apply plugin: 'fatjar'
+
+dependencies {
+    compile project(':commons')
+    // compile fileTree(dir: 'libs', include: '*.jar')
+
+    compile 'com.google.guava:guava:14.0.1'
+    compile 'org.elasticsearch:elasticsearch:1.6.0'
+    //compile 'org.apache.crunch:crunch-core:0.9.0-hadoop2'
+    compile 'com.google.code.gson:gson:2.2.4'
+    // compile 'org.apache.commons:commons-math3:3.2'
+    // compile 'org.apache.kafka:kafka_2.10:0.8.0'
+    // compile 'org.apache.zookeeper:zookeeper:3.4.5'
+    // compile 'com.google.inject:guice:3.0'
+    // compile 'com.amazonaws:aws-java-sdk:1.5.1'
+    //compile 'org.apache.avro:avro:1.7.5'
+    //compile 'org.apache.avro:avro-mapred:1.7.4'
+    //compile 'org.apache.hadoop:hadoop-client:2.2.0'
+    // compile 'com.cybozu.labs:langdetect:1.1-20121212'
+
+
+    testCompile (
+       	'org.testng:testng:6.1.1',
+    )
+}
+
+task integrationTest(type: Test, dependsOn: "test") {
+  useTestNG() {
+    includeGroups 'fault-tolerance'
+  }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.12'
+}
+
+
+[compileJava, compileTestJava]*.options*.compilerArgs = ['-Xlint:unchecked']
+
+configurations {
+    all*.exclude group: 'tomcat', module: 'jasper-compiler'
+    all*.exclude group: 'tomcat', module: 'jasper-runtime'
+    all*.exclude group: 'org.mortbay.jetty'
+}
+
+
+
+jar {
+    zip64 = true
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    exclude('com/google/common/collect/**/*class')
+    manifest { attributes 'Main-Class': 'com.jidian.build.RawAppIndexingDriver' }
+}
+
+
+test {
+    maxHeapSize = '3G'
+    useTestNG {
+        useDefaultListeners = true // generates both HTML and XML output
+        excludeGroups 'db'
+        includeGroups 'unit'
+    }
+    workingDir = rootDir // to help find resource files
+}
