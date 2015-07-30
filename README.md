@@ -1,2 +1,1 @@
-(๑¯ω¯๑)
-Created by Ashley Wang
+Created by [Ashley Wang](https://github.com/treetty) (๑¯ω¯๑)
