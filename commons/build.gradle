@@ -60,10 +60,6 @@ task integrationTest(type: Test, dependsOn: "test") {
   }
 }
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '2.0'
-}
-
 
 [compileJava, compileTestJava]*.options*.compilerArgs = ['-Xlint:unchecked']
 
